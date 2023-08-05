@@ -36,11 +36,12 @@ const SignupForm = () => {
       event.preventDefault();
       event.stopPropagation();
     }
-
+    console.log(userFormData)
     try {
+      console.log("start")
       const { data } = await addUser({
         variables: { ...userFormData },
-      });
+      }); console.log(data)
 
 
       Auth.login(data.addUser.token);
