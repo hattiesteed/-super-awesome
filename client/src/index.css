@@ -15,3 +15,22 @@ h6 {
   font-weight: 300;
   font-style: italic;
 }
+
+.mb-3 button{
+  background-color: red;
+}
+
+.welcomeMain{
+  text-align:center;
+}
+
+#playersPic{
+  border-radius: 25px;
+  box-shadow: 0px 0px 15px 15px #1a1b29;
+}
+
+#welcomeFoot{
+  position: absolute;
+  bottom: 0;
+  width:100%;
+}
