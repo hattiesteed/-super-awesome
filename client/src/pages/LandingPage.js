@@ -6,7 +6,7 @@ const LandingPage = () => {
             <br></br>
             <h1 id='welcomeLog'> Welcome to Hoop Zone! </h1>
             <br></br>
-            <h2>Please log in or sign up to continue!</h2>
+            <h2 id='notifyLog'>Please log in or sign up to continue!</h2>
 
             <br></br>
             <br></br>

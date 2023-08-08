@@ -202,6 +202,18 @@ h6 {
   font-style: italic;
 }
 
+#navName:hover{
+  color: var(--nbaRed);
+}
+
+.loginSignLogout{
+  color:white;
+}
+
+.loginSignLogout:hover{
+  color:var(--nbaRed);
+}
+
 .mb-3 button{
   background-color: red;
 }
@@ -215,12 +227,17 @@ h6 {
   color: var(--nbaRed);
 }
 
+#notifyLog{
+  color: var(--nbaBlue);
+}
+
 #playersPic{
-  border-radius: 25px;
+  border-radius: 15px;
   box-shadow: 0px 0px 15px 15px #1a1b29;
 }
 
 #welcomeFoot{
+  color: var(--nbaRed);
   position: absolute;
   bottom: 0;
   width:100%;
