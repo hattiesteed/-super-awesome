@@ -32,6 +32,28 @@ const resolvers = {
             const token = signToken(user);
             return { token, user };
         },
+        saveTeam: async (parent, { newSavedTeam }, context) => {
+            if (context.user) {
+                const updatedUser = await User.findByIdAndUpdate(
+                    { _id: context.user._id },
+                    { $addToSet: { savedTeams: newSavedTeam } },
+                    { new: true }
+                );
+                return updatedUser;
+            }
+            throw new AuthenticationError('You need to be logged in!');
+    },
+        removeTeam: async (parent, { teamId }, context) => {
+            if (context.user) {
+                const updatedUser = await User.findOneAndUpdate(
+                    { _id: context.user._id },
+                    { $pull: { savedTeams: { teamId: teamId } } },
+                    { new: true }
+                );
+                return updatedUser;
+            }
+            throw new AuthenticationError('You need to be logged in!');
+        },
     },
 };
 

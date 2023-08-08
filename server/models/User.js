@@ -18,6 +18,8 @@ const userSchema = new Schema(
             type: String,
             required: true,
         },
+// set favoriteTeams to be an array of data that adheres to the teamSchema
+        savedTeams: [teamSchema],
     },
     // set this to use virtual below
     {
@@ -41,6 +43,12 @@ userSchema.pre('save', async function (next) {
 userSchema.methods.isCorrectPassword = async function (password) {
     return bcrypt.compare(password, this.password);
 };
+
+// when we query a user, we'll also get another field called `favoriteTeamCount` with the number of saved teams we have
+userSchema.virtual('favoriteTeamCount').get(function () {
+    return this.savedTeams.length;
+});
+
 const User = model('User', userSchema);
 
 module.exports = User;
