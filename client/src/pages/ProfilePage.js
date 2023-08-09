@@ -6,18 +6,28 @@ import React,{ useState, useEffect } from 'react';
 import {saveTeamIds, getSavedTeamIds} from '../utils/localStorage';
 import {SAVE_TEAM} from `../utils/mutations`; 
 
-const SearchTeams = () => {
+// const user = data?.me || data?.user || {};
+
+const ProfilePage = () => {
+    const { loading, error: userQueryerror, data, refetch } = useQuery(GET_ME);
+    const user = data?.me || data?.user || {};
     const [searchedTeams, setSearchTeams] = useState([]);
     const [searchInput, setSearchInput] = useState('');
-    
     const [savedTeamIds, setSavedTeamIds] = useState(getSavedTeamIds());
-    
     const [saveTeam, { error }] = useMutation(SAVE_TEAM);
+    // // navigate to personal profile page if username is yours
+    if (!Auth.loggedIn()) {
+        return <Navigate to="/" />;
+    }
+
+    if (loading) {
+        return <div>Loading...</div>;
+    }
 
     useEffect(() => {
         return() => saveTeamIds(savedTeamIds);
     });
-
+// add this to html where search bar is: onSubmit={handleFormSubmit}
     const handleFormSubmit = async (event) => {
         event.preventDefault();
 
@@ -60,21 +70,7 @@ const SearchTeams = () => {
             console.error(err);
         }
     };
-}
 
-// const user = data?.me || data?.user || {};
-
-const ProfilePage = () => {
-    const { loading, error, data, refetch } = useQuery(GET_ME);
-    const user = data?.me || data?.user || {};
-    // // navigate to personal profile page if username is yours
-    if (!Auth.loggedIn()) {
-        return <Navigate to="/" />;
-    }
-
-    if (loading) {
-        return <div>Loading...</div>;
-    }
     return (
         <main>
             <div className='leftHalf'>
