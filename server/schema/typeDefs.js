@@ -31,8 +31,6 @@ const typeDefs = gql`
         abbreviation: String
     }
 
-    
-
     type Query {
         me: User
     }
@@ -40,6 +38,8 @@ const typeDefs = gql`
     type Mutation {
         login(email: String!, password: String!): Auth
         addUser(username: String!, email: String!, password: String!): Auth
+        saveTeam(newTeam: InputTeam!) : user
+        removeTeam(teamId: String!): user
     }
 `;
 
