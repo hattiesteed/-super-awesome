@@ -11,6 +11,7 @@ import Navbar from './components/Navbar';
 import LandingPage from './pages/LandingPage';
 
 import ProfilePage from './pages/ProfilePage';
+import FavoriteTeams from './pages/FavoriteTeams';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -40,6 +41,7 @@ function App() {
           <Routes>
             <Route exact path='/' element={< LandingPage />} />
             <Route path='/Profile' element={<ProfilePage />} />
+            <Route path='/FavoriteTeams' element={<FavoriteTeams />} />
           </Routes>
         </>
       </Router>
