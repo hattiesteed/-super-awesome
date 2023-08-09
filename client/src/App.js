@@ -12,7 +12,6 @@ import LandingPage from './pages/LandingPage';
 
 import ProfilePage from './pages/ProfilePage';
 
-
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
