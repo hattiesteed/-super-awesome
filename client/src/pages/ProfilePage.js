@@ -7,7 +7,7 @@ import {saveTeamIds, getSavedTeamIds} from '../utils/localStorage';
 import {SAVE_TEAM} from `../utils/mutations`; 
 
 const SearchTeams = () => {
-    const [SearchTeams, setSearchTeams] = useState([]);
+    const [searchedTeams, setSearchTeams] = useState([]);
     const [searchInput, setSearchInput] = useState('');
     
     const [savedTeamIds, setSavedTeamIds] = useState(getSavedTeamIds());
@@ -40,6 +40,22 @@ const SearchTeams = () => {
         }));
         setSearchTeams(teamData);
         setSearchInput(``);
+        } catch (err) {
+            console.error(err);
+        }
+    };
+    const handleSaveTeam= async (teamId) => {
+        const teamToSave = searchedTeams.find((team) => team.teamId === teamId);
+        const token = Auth.loggedIn() ? Auth.getToken() : null;
+
+        if (!token) {
+            return false;
+        }
+        try{
+            const {data} = await saveTeam({
+                variables: {teamData: { ...teamToSave}},
+            });
+            setSavedTeamIds([...savedTeamIds, teamToSave.teamId]);
         } catch (err) {
             console.error(err);
         }
