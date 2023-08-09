@@ -4,7 +4,7 @@ import { useQuery, useMutation } from '@apollo/client';
 import Auth from '../utils/auth';
 import React,{ useState, useEffect } from 'react';
 import {saveTeamIds, getSavedTeamIds} from '../utils/localStorage';
-import {SAVE_TEAM} from `../utils/mutations`; 
+import {SAVE_TEAM} from '../utils/mutations'; 
 
 // const user = data?.me || data?.user || {};
 
@@ -16,6 +16,9 @@ const ProfilePage = () => {
     const [savedTeamIds, setSavedTeamIds] = useState(getSavedTeamIds());
     const [saveTeam, { error }] = useMutation(SAVE_TEAM);
     // // navigate to personal profile page if username is yours
+    useEffect(() => {
+        return() => saveTeamIds(savedTeamIds);
+    });
     if (!Auth.loggedIn()) {
         return <Navigate to="/" />;
     }
@@ -24,9 +27,7 @@ const ProfilePage = () => {
         return <div>Loading...</div>;
     }
 
-    useEffect(() => {
-        return() => saveTeamIds(savedTeamIds);
-    });
+    
 // add this to html where search bar is: onSubmit={handleFormSubmit}
     const handleFormSubmit = async (event) => {
         event.preventDefault();
