@@ -6,16 +6,16 @@ import Auth from '../utils/auth';
 // const user = data?.me || data?.user || {};
 
 const ProfilePage = () => {
-    // const { loading, error, data, refetch } = useQuery(GET_ME);
-    // const user = data?.me || data?.user || {};
+    const { loading, error, data, refetch } = useQuery(GET_ME);
+    const user = data?.me || data?.user || {};
     // // navigate to personal profile page if username is yours
-    // if (!Auth.loggedIn()) {
-    //     return <Navigate to="/" />;
-    // }
+    if (!Auth.loggedIn()) {
+        return <Navigate to="/" />;
+    }
 
-    // if (loading) {
-    //     return <div>Loading...</div>;
-    // }
+    if (loading) {
+        return <div>Loading...</div>;
+    }
     return (
         <main>
             <div className='leftHalf'>
@@ -24,7 +24,7 @@ const ProfilePage = () => {
             <h1>testing</h1>
 
             <div className='rightHalf'>
-                <h2>Welcome back {}</h2>
+                <h2>Welcome back { }</h2>
                 {/* <h2>{data.username}</h2> */}
 
 
@@ -42,7 +42,7 @@ const ProfilePage = () => {
                     <option value='nugs'>Denver Nuggets</option>
                 </select>
             </div>
-            
+
 
 
         </main>
