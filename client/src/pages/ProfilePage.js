@@ -1,7 +1,50 @@
 import { Navigate } from 'react-router-dom';
 import { GET_ME } from '../utils/queries';
-import { useQuery } from '@apollo/client';
+import { useQuery, useMutation } from '@apollo/client';
 import Auth from '../utils/auth';
+import React,{ useState, useEffect } from 'react';
+import {saveTeamIds, getSavedTeamIds} from '../utils/localStorage';
+import {SAVE_TEAM} from `../utils/mutations`; 
+
+const SearchTeams = () => {
+    const [SearchTeams, setSearchTeams] = useState([]);
+    const [searchInput, setSearchInput] = useState('');
+    
+    const [savedTeamIds, setSavedTeamIds] = useState(getSavedTeamIds());
+    
+    const [saveTeam, { error }] = useMutation(SAVE_TEAM);
+
+    useEffect(() => {
+        return() => saveTeamIds(savedTeamIds);
+    });
+
+    const handleFormSubmit = async (event) => {
+        event.preventDefault();
+
+        if (!searchInput) {
+            return false;
+        }
+        try {
+            const response = await fetch(`https://www.balldontlie.io/api/v1/teams?search=${searchInput}`);
+        if(!response.ok) {
+            throw new Error(`Uh oh...Something went wrong!`);
+        }
+        const {items} = await response.json();
+        const teamData = items.map((team) => ({
+            teamId: team.id,
+            name:team.name,
+            conference: team.conference,
+            division: team.division,
+            city: team.city,
+            abbreviation: team.abbreviation,
+        }));
+        setSearchTeams(teamData);
+        setSearchInput(``);
+        } catch (err) {
+            console.error(err);
+        }
+    };
+}
 
 // const user = data?.me || data?.user || {};
 
