@@ -13,6 +13,26 @@ const typeDefs = gql`
         user: User
     }
 
+    type: Team {
+        teamId: String!
+        name: String
+        conference: String
+        division: String
+        city: String
+        abbreviation: String
+    }
+
+    input InputTeam {
+        teamId: String!
+        name: String
+        conference: String
+        division: String
+        city: String
+        abbreviation: String
+    }
+
+    
+
     type Query {
         me: User
     }
