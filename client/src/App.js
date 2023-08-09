@@ -9,6 +9,7 @@ import {
 import { setContext } from '@apollo/client/link/context';
 import Navbar from './components/Navbar';
 import LandingPage from './pages/LandingPage';
+
 import ProfilePage from './pages/ProfilePage';
 
 const httpLink = createHttpLink({

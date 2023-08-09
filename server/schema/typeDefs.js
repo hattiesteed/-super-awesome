@@ -13,6 +13,24 @@ const typeDefs = gql`
         user: User
     }
 
+    type: Team {
+        teamId: String!
+        name: String
+        conference: String
+        division: String
+        city: String
+        abbreviation: String
+    }
+
+    input InputTeam {
+        teamId: String!
+        name: String
+        conference: String
+        division: String
+        city: String
+        abbreviation: String
+    }
+
     type Query {
         me: User
     }
@@ -20,6 +38,8 @@ const typeDefs = gql`
     type Mutation {
         login(email: String!, password: String!): Auth
         addUser(username: String!, email: String!, password: String!): Auth
+        saveTeam(newTeam: InputTeam!) : user
+        removeTeam(teamId: String!): user
     }
 `;
 
