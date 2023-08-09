@@ -39,3 +39,39 @@ mutation addUser(
             }
         }
 `;
+
+export const SAVE_TEAM = gql`
+mutation saveTeam( $newTeam: TeamInput! ) {
+    saveTeam( newTeam: $newTeam ) {
+        _id
+        username
+        email
+        savedTeams {
+            teamId
+            name
+            conference
+            division
+            city
+            abbreviation
+        }
+    }
+}
+`;
+
+export const REMOVE_TEAM = gql`
+mutation removeTeam( $teamId: String! ) {
+    removeTeam( teamId: $teamId ) {
+        _id
+        username
+        email
+        savedTeams {
+            teamId
+            name
+            conference
+            division
+            city
+            abbreviation
+        }
+    }
+}
+`;
