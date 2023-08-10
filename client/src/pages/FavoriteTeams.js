@@ -46,7 +46,7 @@ const FavoriteTeams = () => {
             <Row>
                 {user.savedTeams.map((team) => {
                     return(
-                        <Col md='4' key={team.teamId}>
+                        <Col md='3' key={team.teamId}>
                             <Card className={team.name}>
                                 <Card.Body>
                                     <Card.Title>{team.name}</Card.Title>
