@@ -1,7 +1,6 @@
 import {
     Container,
     Col,
-    Form,
     Button,
     Card,
     Row
@@ -46,9 +45,18 @@ const ProfilePage = () => {
         }
     };
 
+    const teamData = {
+        abbreviation: "ATL",
+        city: "Atlanta",
+        conference: "East",
+        division: "Southeast",
+        name: "Atlanta Hawks",
+        teamId: 1
+    }
     // // navigate to personal profile page if username is yours
     useEffect(() => {
-        getTeams()
+        // getTeams()
+
         return () => saveTeamIds(savedTeamIds);
     });
     if (!Auth.loggedIn()) {
@@ -58,7 +66,11 @@ const ProfilePage = () => {
     if (loading) {
         return <div>Loading...</div>;
     }
-
+    function test() {
+        saveTeam({
+            variables: { newTeam: teamData }
+        })
+    }
     const handleSaveTeam = async (teamId) => {
         const teamToSave = searchedTeams.find((team) => team.id === teamId);
         const token = Auth.loggedIn() ? Auth.getToken() : null;
@@ -73,12 +85,15 @@ const ProfilePage = () => {
             });
             setSavedTeamIds([...savedTeamIds, teamToSave.teamId]);
         } catch (err) {
+            console.log(err.message)
+            console.log(err.name)
             console.error(err);
         }
     };
 
     return (
         <main>
+            <Button onClick={test}>Test</Button>
             <div>
                 <Container>
                     <h1>Add your favorite teams!</h1>
@@ -105,8 +120,8 @@ const ProfilePage = () => {
                         {
                             searchedTeams.map((team) => {
                                 return (
-                                    <Col md="4">
-                                        <Card key={team.id} className={team.class}>
+                                    <Col key={team.id} md="4">
+                                        <Card className={team.class}>
                                             <Card.Body>
                                                 <Card.Title>{team.name}</Card.Title>
                                                 <Button variant="primary" onClick={() => handleSaveTeam(team.id)}>Save</Button>

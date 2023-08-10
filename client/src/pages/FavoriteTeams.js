@@ -2,13 +2,13 @@ import { Navigate } from 'react-router-dom';
 import { GET_ME } from '../utils/queries';
 import { useQuery, useMutation } from '@apollo/client';
 import Auth from '../utils/auth';
-import {REMOVE_TEAM} from '../utils/mutations';
+import { REMOVE_TEAM } from '../utils/mutations';
 import { removeTeamId } from '../utils/localStorage';
 
 const FavoriteTeams = () => {
     const { loading, error, data, refetch } = useQuery(GET_ME);
     const user = data?.me || data?.user || {};
-    const [removeTeam, {removeTeamError}] = useMutation(REMOVE_TEAM);
+    const [removeTeam, { removeTeamError }] = useMutation(REMOVE_TEAM);
     // // navigate to personal profile page if username is yours
     if (!Auth.loggedIn()) {
         return <Navigate to="/" />;
@@ -23,7 +23,7 @@ const FavoriteTeams = () => {
             return false;
         }
         try {
-            const {data} = await removeTeam({
+            const { data } = await removeTeam({
                 variables: { teamId },
             });
             removeTeamId(teamId);
