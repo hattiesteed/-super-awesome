@@ -33,7 +33,7 @@
   --black: #000000;
   /* --white: #ffffff; */
   --bullRed: #CE1141;
-  
+
   /* Cleveland Cavaliers */
   /* --black: #000000; */
   --cavGold: #FDBB30;
@@ -94,7 +94,7 @@
   /* --grizzBlueD: #12173F;
   --grizzGray: #707271; */
 
-  
+
   /* Miami Heat */
   --heatRed: #98002E;
   --heatGold: #F9A01B;
@@ -152,7 +152,7 @@
   /* --sunYellow: #F9AD1B;
   --sunGray: #63727A;
   --black: #000000; */
-  
+
   /* Portland Trail Blazers */
   --blazeRed: #E03A3E;
   --black: #000000;
@@ -173,7 +173,7 @@
   /* --rapSilver: #A1A1A4;
   --rapGold: #B4975A;
   --white: #ffffff; */
-  
+
   /* Utah Jazz */
   --jazzYell: #fff21f;
   --black: #000000;
@@ -184,8 +184,9 @@
   /* --wizGray: #C4CED4; */
 }
 
-body, html{
-  height:100%;
+body,
+html {
+  height: 100%;
 }
 
 body {
@@ -206,58 +207,62 @@ h6 {
   font-style: italic;
 }
 
-#navName:hover{
+#navName:hover {
   color: var(--nbaRed);
 }
 
-.loginSignLogout{
-  color:white;
+.loginSignLogout {
+  color: white;
 }
 
-.loginSignLogout:hover{
-  color:var(--nbaRed);
+.loginSignLogout:hover {
+  color: var(--nbaRed);
 }
 
-.mb-3 button{
+.mb-3 button {
   background-color: red;
 }
 
-.welcomeMain{
-  text-align:center;
+.welcomeMain {
+  text-align: center;
 }
 
-#welcomeLog{
+#welcomeLog {
   font-size: 3vw;
   color: var(--nbaRed);
 }
 
-#notifyLog{
+#notifyLog {
   color: var(--nbaBlue);
 }
 
-#playersPic{
+#playersPic {
   border-radius: 15px;
   box-shadow: 0px 0px 15px 15px #1a1b29;
 }
 
-.leftHalf{
-  width:50%;
+/* #courtPic {
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px 15px #1a1b29;
+} */
+
+.leftHalf {
+  width: 50%;
   background-color: navajowhite;
-  height:100%;
-  float:left;
+  height: 100%;
+  float: left;
 }
 
-.rightHalf{
-  width:50%;
+.rightHalf {
+  width: 50%;
   background-color: green;
-  height:100%;
-  float:right;
+  height: 100%;
+  float: right;
 }
 
-#welcomeFoot{
+#welcomeFoot {
   color: var(--nbaRed);
   position: absolute;
   bottom: 0;
-  width:100%;
+  width: 100%;
 }
-
