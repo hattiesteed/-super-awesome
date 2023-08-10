@@ -24,10 +24,10 @@ const AppNavbar = () => {
               {Auth.loggedIn() ? (
                 <>
                   <Navbar.Brand as={Link} to='/FavoriteTeams'>
-                    Your Favorite Teams
+                    Your Teams
                   </Navbar.Brand>
                   <Navbar.Brand as={Link} to='/Profile'>
-                    Pick your Favorite team
+                    Add your favorite team
                   </Navbar.Brand>
                   <Nav.Link onClick={Auth.logout} className='loginSignLogout'>Logout</Nav.Link>
                 </>
