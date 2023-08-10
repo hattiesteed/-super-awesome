@@ -9,15 +9,15 @@
 
   /* Atlanta Hawks */
   --hawkRed: #E03A3E;
-  /* --hawkGreen: #C1D32F; */
+  --hawkGreen: #C1D32F;
   --hawkBlack: #26282A;
 
   /* Boston Celtics */
   --celticGreen: #007A33;
   --celticGold: #BA9653;
-  /* --celticBrown: #963821;
+  --celticBrown: #963821;
   --black: #000000;
-  --white: #ffffff; */
+  --white: #ffffff;
 
   /* Brooklyn Nets */
   --black: #000000;
@@ -26,38 +26,38 @@
 
   /* Charlotte Hornets */
   --hornetTeal: #00788C;
-  /* --hornetPurple: #1D1160; */
+  --hornetPurple: #1D1160;
   --gray: #777D84;
 
   /* Chicago Bulls */
   --black: #000000;
-  /* --white: #ffffff; */
+  --white: #ffffff;
   --bullRed: #CE1141;
 
   /* Cleveland Cavaliers */
-  /* --black: #000000; */
+  --black: #000000;
   --cavGold: #FDBB30;
-  /* --cavBlue: #041E42; */
+  --cavBlue: #041E42;
   --cavRed: #860038;
 
   /* Dallas Mavericks */
   --mavsBlueL: #00538C;
-  /* --mavsBlueD: #002B5C; */
+  --mavsBlueD: #002B5C;
   --mavsSilver: #B8C4CA;
-  /* --black: #000000; */
+  --black: #000000;
 
   /* Denver Nuggets */
   --nugsBlueL: #1D428A;
-  /* --nugsBlueD: #0E2240; */
+  --nugsBlueD: #0E2240;
   --nugsYellow: #FEC524;
-  /* --nugsRed: #8B2131; */
+  --nugsRed: #8B2131;
 
   /* Detroit Pistons */
   --pistonBlueL: #1D42BA;
-  /* --pistonBlueD: #002D62; */
+  --pistonBlueD: #002D62;
   --pistonRed: #C8102E;
-  /* --pistonGrey: #BEC0C2;
-  --white: #ffffff; */
+  --pistonGrey: #BEC0C2;
+  --white: #ffffff;
 
   /* Golden State Warriors */
   --warriorBlue: #1D428A;
@@ -67,72 +67,72 @@
   /* Houston Rockets */
   --rocketRed: #CE1141;
   --rocketGrayL: #C4CED4;
-  /* --rocketGrayD: #373a36;
+  --rocketGrayD: #373a36;
   --black: #000000;
-  --white: #ffffff; */
+  --white: #ffffff;
 
   /* Indiana Pacers */
   --pacerBlue: #002D62;
   --pacerGold: #FDBB30;
-  /* --pacerGray: #BEC0C2; */
+  --pacerGray: #BEC0C2;
 
   /* LA Clippers */
   --clipRed: #C8102E;
   --clipBlue: #1D428A;
-  /* --clipGray: #BEC0C2;
+  --clipGray: #BEC0C2;
   --black: #000000;
-  --white: #ffffff; */
+  --white: #ffffff;
 
   /* LA Lakers */
   --lakePurple: #552583;
   --lakeYellow: #FDB927;
-  /* --black: #000000; */
+  --black: #000000;
 
   /* Memphis Grizzlies */
   --grizzBlueL: #5D76A9;
   --grizzGold: #F5B112;
-  /* --grizzBlueD: #12173F;
-  --grizzGray: #707271; */
+  --grizzBlueD: #12173F;
+  --grizzGray: #707271;
 
 
   /* Miami Heat */
   --heatRed: #98002E;
   --heatGold: #F9A01B;
-  /* --black: #000000;
-  --white: #ffffff; */
+  --black: #000000;
+  --white: #ffffff;
 
   /* Milwaukee Bucks */
   --buckGreen: #00471B;
   --buckCream: #EEE1C6;
-  /* --buckBlue: #0077C0;
+  --buckBlue: #0077C0;
   --black: #000000;
-  --white: #ffffff; */
+  --white: #ffffff;
 
   /* Minnesota Timberwolves */
   --wolfBlueL: #236192;
   --wolfGreen: #78BE20;
-  /* --wolfBlueD: #0C2340;
+  --wolfBlueD: #0C2340;
   --wolfGrey: #9EA2A2;
-  --white: #ffffff; */
+  --white: #ffffff;
 
   /* NO Pelicans */
   --peliBlue: #0C2340;
   --peliGold: #85714D;
-  /* --peliRed: #C8102E;
-  --white: #ffffff; */
+  --peliRed: #C8102E;
+  --white: #ffffff;
 
   /* NY Knicks */
   --knickBlue: #006BB6;
   --knickOrange: #F58426;
-  /* --knickGray: #BEC0C2;
+  --knickGray: #BEC0C2;
   --black: #000000;
-  --white: #ffffff; */
+  --white: #ffffff;
 
   /* OKC Thunder */
   --okcBlueL: #007AC1;
   --okcOrange: #EF3B24;
-  /* --okcBlueD: #002D62;
-  --okcYellow: #FDBB30; */
+  --okcBlueD: #002D62;
+  --okcYellow: #FDBB30;
 
   /* Orlando Magic */
   --magicBlue: #0077C0;
@@ -142,26 +142,26 @@
   /* Philly 76 */
   --sevenRed: #ED174C;
   --sevenBlueL: #006BB6;
-  /* --sevenBLueD: #002B5C;
+  --sevenBLueD: #002B5C;
   --sevenSilver: #C4CED4;
-  --white: #ffffff; */
+  --white: #ffffff;
 
   /* Phoenix Suns */
   --sunPurple: #1D1160;
   --sunOrange: #E56020;
-  /* --sunYellow: #F9AD1B;
+  --sunYellow: #F9AD1B;
   --sunGray: #63727A;
-  --black: #000000; */
+  --black: #000000;
 
   /* Portland Trail Blazers */
   --blazeRed: #E03A3E;
   --black: #000000;
-  /* --white: #ffffff; */
+  --white: #ffffff;
 
   /* Sacramento Kings */
   --kingPurple: #5A2D81;
   --kingGray: #63727A;
-  /* --black: #000000; */
+  --black: #000000;
 
   /* San Antonio Spurs */
   --spurSilver: #C4CED4;
@@ -170,9 +170,9 @@
   /* Toronto Raptors */
   --rapRed: #CE1141;
   --black: #000000;
-  /* --rapSilver: #A1A1A4;
+  --rapSilver: #A1A1A4;
   --rapGold: #B4975A;
-  --white: #ffffff; */
+  --white: #ffffff;
 
   /* Utah Jazz */
   --jazzYell: #fff21f;
@@ -181,7 +181,7 @@
   /* Washington Wizards */
   --wizRed: #E31837;
   --wizBlue: #002B5C;
-  /* --wizGray: #C4CED4; */
+  --wizGray: #C4CED4;
 }
 
 body,
@@ -292,3 +292,156 @@ h6 {
   display: flex;
   justify-content: space-around;
 }
+
+/* team card css */
+
+.card.Hawks{
+  background-color: var(--hawkBlack);
+  color:var(--hawkRed);
+}
+
+.card.Celtics{
+  background-color: var(--celticGreen);
+  color: var(--white);
+}
+
+.card.Nets{
+  background-color: var(--black);
+  color:var(--white);
+}
+
+.card.Hornets{
+  background-color: var(--hornetTeal);
+  color: var(--white);
+}
+
+.card.Bulls{
+  background-color: var(--bullRed);
+  color: var(--black);
+}
+
+.card.Cavaliers{
+  background-color: var(--cavRed);
+  color:var(--cavGold);
+}
+
+.card.Mavericks{
+  background-color: var(--mavsSilver);
+  color: var(--mavsBlueL);
+}
+
+.card.Nuggets{
+  background-color: var(--nugsBlueL);
+  color:var(--nugsYellow);
+}
+
+.card.Pistons{
+  background-color: var(--pistonBlueL);
+  color: var(--pistonRed);
+}
+
+.card.Warriors{
+  background-color: var(--warrriorYellow);
+  color:var(--warriorBlue);
+}
+
+.card.Rockets{
+  background-color: var(--rocketGrayL);
+  color:var(--rocketRed);
+}
+
+.card.Pacers{
+  background-color: var(--pacerGold);
+  color:var(--pacerBlue);
+}
+
+.card.Clippers{
+  background-color: var(--clipGray);
+  color:var(--clipBlue);
+}
+
+.card.Lakers{
+  background-color: var(--lakePurple);
+  color:var(--lakeYellow);
+}
+
+.card.Grizzlies{
+  background-color: var(--grizzGray);
+  color:var(--grizzBlueL);
+}
+
+.card.Heat{
+  background-color: var(--heatRed);
+  color:var(--heatGold);
+}
+
+.card.Bucks{
+  background-color: var(--buckCream);
+  color:var(--buckGreen);
+}
+
+.card.Timberwolves{
+  background-color: var(--wolfGrey);
+  color:var(--wolfGreen);
+}
+
+.card.Pelicans{
+  background-color: var(--peliGold);
+  color:var(--peliBlue);
+}
+
+.card.Knicks{
+  background-color: var(--knickBlue);
+  color:var(--knickOrange);
+}
+
+.card.Thunder{
+  background-color: var(--okcBlueL);
+  color:var(--okcOrange);
+}
+
+.card.Magic{
+  background-color: var(--magicSilver);
+  color:var(--magicBlue);
+}
+
+.card.SevenSix{
+  background-color: var(--sevenBLueD);
+  color:var(--sevenRed);
+}
+
+.card.Suns{
+  background-color: var(--sunPurple);
+  color:var(--sunOrange);
+}
+
+.card.Blazers{
+  background-color: var(--black);
+  color:var(--blazeRed);
+}
+
+.card.Kings{
+  background-color: var(--kingGray);
+  color:var(--kingPurple);
+}
+
+.card.Spurs{
+  background-color: var(--spurSilver);
+  color:var(--black);
+}
+
+.card.Raptors{
+  background-color: var(--rapRed);
+  color:var(--rapSilver);
+}
+
+.card.Jazz{
+  background-color: var(--black);
+  color:var(--jazzYell);
+}
+
+.card.Wizards{
+  background-color: var(--wizBlue);
+  color: var(--wizRed);
+}
+
