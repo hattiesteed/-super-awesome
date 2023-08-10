@@ -265,3 +265,24 @@ h6 {
   width:100%;
 }
 
+#teamSearchBtn{
+  background-color: var(--nbaBlue);
+}
+
+#teamSearchBtn:hover{
+  background-color: var(--nbaRed);
+}
+
+#teamSearchBox:focus{
+  box-shadow: 0 0 4px 1px var(--nbaBlue);
+  border-color: var(--nbaBlue);
+}
+
+#favTeamH1{
+  text-align: center;
+}
+
+.teamsList{
+  display: flex;
+  justify-content: space-around;
+}
