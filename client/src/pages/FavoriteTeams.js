@@ -33,7 +33,11 @@ const FavoriteTeams = () => {
     };
     return (
         <main>
-            <h1>Fabian was here</h1>
+            <h1>Your favorites teams:</h1>
+
+            <div className='teamsList'>
+                your favorite teams will display here!
+            </div>
         </main>
     )
 }

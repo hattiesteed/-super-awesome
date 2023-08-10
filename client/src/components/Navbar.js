@@ -23,10 +23,10 @@ const AppNavbar = () => {
               {/* if user is logged in show saved teams and logout */}
               {Auth.loggedIn() ? (
                 <>
-                  <Navbar.Brand as={Link} to='/FavoriteTeams'>
+                  <Navbar.Brand as={Link} to='/FavoriteTeams' id='colorHov'>
                     Your Favorite Teams
                   </Navbar.Brand>
-                  <Navbar.Brand as={Link} to='/Profile'>
+                  <Navbar.Brand as={Link} to='/Profile' id='colorHov'>
                     Pick your Favorite team
                   </Navbar.Brand>
                   <Nav.Link onClick={Auth.logout} className='loginSignLogout'>Logout</Nav.Link>

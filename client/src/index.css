@@ -210,6 +210,10 @@ h6 {
   color: var(--nbaRed);
 }
 
+#colorHov:hover{
+  color: var(--nbaRed);
+}
+
 .loginSignLogout{
   color:white;
 }
