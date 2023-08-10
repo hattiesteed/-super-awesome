@@ -583,6 +583,14 @@ color:var(--wolfBlueD);
   background-color: var(--sevenBLueD);
   color:var(--sevenRed);
 }
+.card.Philadelphia button{
+  background-color: var(--sevenBlueL);
+  color:var(--sevenSilver);
+}
+.card.Philadelphia button:hover{
+  background-color: var(--sevenSilver);
+  color:var(--sevenRed);
+}
 
 .card.Suns{
   background-color: var(--sunPurple);
