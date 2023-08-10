@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6e0ef870.css",
+    "main.js": "/static/js/main.e544ee91.js",
+    "static/media/nbaPlayers.jpg": "/static/media/nbaPlayers.33473b553c4e8d52b996.jpg",
+    "index.html": "/index.html",
+    "main.6e0ef870.css.map": "/static/css/main.6e0ef870.css.map",
+    "main.e544ee91.js.map": "/static/js/main.e544ee91.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6e0ef870.css",
+    "static/js/main.e544ee91.js"
+  ]
+}
