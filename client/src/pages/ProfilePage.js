@@ -42,16 +42,17 @@ const ProfilePage = () => {
     }
 
     const handleSaveTeam = async (teamId) => {
-        const teamToSave = searchedTeams.find((team) => team.id === teamId);
+        const teamToSave = searchedTeams.find((team) => team.teamId === teamId);
         const token = Auth.loggedIn() ? Auth.getToken() : null;
 
         if (!token) {
             return false;
         }
         try {
-            const response = await saveTeam({
-                variables: { newTeam: teamToSave },
-            });
+            // const response = await saveTeam({
+            //     variables: { newTeam: teamToSave },
+            // });
+            console.log(teamToSave);
             setSavedTeamIds([...savedTeamIds, teamToSave.teamId]);
         } catch (err) {
             console.error(err);
@@ -86,12 +87,13 @@ const ProfilePage = () => {
                     <Row>
                         {
                             searchedTeams.map((team) => {
+                               
                                 return (
-                                    <Col key={team.id} md="4">
+                                    <Col key={team.teamId} md="4">
                                         <Card className={team.class}>
                                             <Card.Body>
                                                 <Card.Title>{team.name}</Card.Title>
-                                                <Button variant="primary" onClick={() => handleSaveTeam(team.id)}>Save</Button>
+                                                <Button variant="primary" onClick={() => handleSaveTeam(team.teamId)}>Save</Button>
                                             </Card.Body>
                                         </Card>
                                     </Col>
