@@ -4,6 +4,13 @@ import { useQuery, useMutation } from '@apollo/client';
 import Auth from '../utils/auth';
 import { REMOVE_TEAM } from '../utils/mutations';
 import { removeTeamId } from '../utils/localStorage';
+import {
+    Container,
+    Card,
+    Button,
+    Row,
+    Col
+} from 'react-bootstrap';
 
 const FavoriteTeams = () => {
     const { loading, error, data, refetch } = useQuery(GET_ME);
@@ -31,9 +38,32 @@ const FavoriteTeams = () => {
             console.error(err);
         }
     };
+
+    console.log(user)
     return (
         <main>
-            <h1>Fabian was here</h1>
+            <h1 id='favTeamH1'>Your favorites teams:</h1>
+            <Row>
+                {user.savedTeams.map((team) => {
+                    let classString = team.class
+                    if (classString=='76ers') {
+                        classString = 'Philadelphia'
+                    };
+                    return(
+                        <Col md='3' key={team.teamId}>
+                            <Card className={classString}>
+                                <Card.Body>
+                                    <Card.Title>{team.name}</Card.Title>
+                                    <Card.Text>{team.city}</Card.Text>
+                                    <Button className='btn-block btn-danger' onClick={() => handleRemoveTeam(team.teamId) }>
+                                        Remove this team!
+                                    </Button>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    );
+                })}
+            </Row>
         </main>
     )
 }

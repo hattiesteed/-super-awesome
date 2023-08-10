@@ -26,6 +26,10 @@ const teamSchema = new Schema({
         type: Number,
         required: true,
     },
+    class: {
+        type: String,
+        required: true,
+    }
 
 });
 

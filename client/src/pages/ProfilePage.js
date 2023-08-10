@@ -42,7 +42,7 @@ const ProfilePage = () => {
     }
 
     const handleSaveTeam = async (teamId) => {
-        const teamToSave = searchedTeams.find((team) => team.id === teamId);
+        const teamToSave = searchedTeams.find((team) => team.teamId === teamId);
         const token = Auth.loggedIn() ? Auth.getToken() : null;
 
         if (!token) {
@@ -52,6 +52,7 @@ const ProfilePage = () => {
             const response = await saveTeam({
                 variables: { newTeam: teamToSave },
             });
+            console.log(teamToSave);
             setSavedTeamIds([...savedTeamIds, teamToSave.teamId]);
         } catch (err) {
             console.error(err);
@@ -73,10 +74,11 @@ const ProfilePage = () => {
                                     type='text'
                                     size='lg'
                                     placeholder='Search for a favorite NBA team'
+                                    id='teamSearchBox'
                                 />
                             </Col>
                             <Col xs={12} md={4}>
-                                <Button type='submit' variant='success' size='lg'>
+                                <Button type='submit' id='teamSearchBtn' variant='success' size='lg'>
                                     Submit Search
                                 </Button>
                             </Col>
@@ -85,12 +87,16 @@ const ProfilePage = () => {
                     <Row>
                         {
                             searchedTeams.map((team) => {
+                                let classString = team.class
+                                if (classString=='76ers') {
+                                    classString = 'Philadelphia'
+                                };
                                 return (
-                                    <Col key={team.id} md="4">
-                                        <Card className={team.class}>
+                                    <Col key={team.teamId} md="4">
+                                        <Card className={classString}>
                                             <Card.Body>
                                                 <Card.Title>{team.name}</Card.Title>
-                                                <Button variant="primary" onClick={() => handleSaveTeam(team.id)}>Save</Button>
+                                                <Button variant="primary" onClick={() => handleSaveTeam(team.teamId)}>Save</Button>
                                             </Card.Body>
                                         </Card>
                                     </Col>

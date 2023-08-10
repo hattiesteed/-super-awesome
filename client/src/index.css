@@ -9,15 +9,15 @@
 
   /* Atlanta Hawks */
   --hawkRed: #E03A3E;
-  /* --hawkGreen: #C1D32F; */
+  --hawkGreen: #C1D32F;
   --hawkBlack: #26282A;
 
   /* Boston Celtics */
   --celticGreen: #007A33;
   --celticGold: #BA9653;
-  /* --celticBrown: #963821;
+  --celticBrown: #963821;
   --black: #000000;
-  --white: #ffffff; */
+  --white: #ffffff;
 
   /* Brooklyn Nets */
   --black: #000000;
@@ -26,38 +26,38 @@
 
   /* Charlotte Hornets */
   --hornetTeal: #00788C;
-  /* --hornetPurple: #1D1160; */
+  --hornetPurple: #1D1160;
   --gray: #777D84;
 
   /* Chicago Bulls */
   --black: #000000;
-  /* --white: #ffffff; */
+  --white: #ffffff;
   --bullRed: #CE1141;
 
   /* Cleveland Cavaliers */
-  /* --black: #000000; */
+  --black: #000000;
   --cavGold: #FDBB30;
-  /* --cavBlue: #041E42; */
+  --cavBlue: #041E42;
   --cavRed: #860038;
 
   /* Dallas Mavericks */
   --mavsBlueL: #00538C;
-  /* --mavsBlueD: #002B5C; */
+  --mavsBlueD: #002B5C;
   --mavsSilver: #B8C4CA;
-  /* --black: #000000; */
+  --black: #000000;
 
   /* Denver Nuggets */
   --nugsBlueL: #1D428A;
-  /* --nugsBlueD: #0E2240; */
+  --nugsBlueD: #0E2240;
   --nugsYellow: #FEC524;
-  /* --nugsRed: #8B2131; */
+  --nugsRed: #8B2131;
 
   /* Detroit Pistons */
   --pistonBlueL: #1D42BA;
-  /* --pistonBlueD: #002D62; */
+  --pistonBlueD: #002D62;
   --pistonRed: #C8102E;
-  /* --pistonGrey: #BEC0C2;
-  --white: #ffffff; */
+  --pistonGrey: #BEC0C2;
+  --white: #ffffff;
 
   /* Golden State Warriors */
   --warriorBlue: #1D428A;
@@ -67,72 +67,72 @@
   /* Houston Rockets */
   --rocketRed: #CE1141;
   --rocketGrayL: #C4CED4;
-  /* --rocketGrayD: #373a36;
+  --rocketGrayD: #373a36;
   --black: #000000;
-  --white: #ffffff; */
+  --white: #ffffff;
 
   /* Indiana Pacers */
   --pacerBlue: #002D62;
   --pacerGold: #FDBB30;
-  /* --pacerGray: #BEC0C2; */
+  --pacerGray: #BEC0C2;
 
   /* LA Clippers */
   --clipRed: #C8102E;
   --clipBlue: #1D428A;
-  /* --clipGray: #BEC0C2;
+  --clipGray: #BEC0C2;
   --black: #000000;
-  --white: #ffffff; */
+  --white: #ffffff;
 
   /* LA Lakers */
   --lakePurple: #552583;
   --lakeYellow: #FDB927;
-  /* --black: #000000; */
+  --black: #000000;
 
   /* Memphis Grizzlies */
   --grizzBlueL: #5D76A9;
   --grizzGold: #F5B112;
-  /* --grizzBlueD: #12173F;
-  --grizzGray: #707271; */
+  --grizzBlueD: #12173F;
+  --grizzGray: #707271;
 
 
   /* Miami Heat */
   --heatRed: #98002E;
   --heatGold: #F9A01B;
-  /* --black: #000000;
-  --white: #ffffff; */
+  --black: #000000;
+  --white: #ffffff;
 
   /* Milwaukee Bucks */
   --buckGreen: #00471B;
   --buckCream: #EEE1C6;
-  /* --buckBlue: #0077C0;
+  --buckBlue: #0077C0;
   --black: #000000;
-  --white: #ffffff; */
+  --white: #ffffff;
 
   /* Minnesota Timberwolves */
   --wolfBlueL: #236192;
   --wolfGreen: #78BE20;
-  /* --wolfBlueD: #0C2340;
+  --wolfBlueD: #0C2340;
   --wolfGrey: #9EA2A2;
-  --white: #ffffff; */
+  --white: #ffffff;
 
   /* NO Pelicans */
   --peliBlue: #0C2340;
   --peliGold: #85714D;
-  /* --peliRed: #C8102E;
-  --white: #ffffff; */
+  --peliRed: #C8102E;
+  --white: #ffffff;
 
   /* NY Knicks */
   --knickBlue: #006BB6;
   --knickOrange: #F58426;
-  /* --knickGray: #BEC0C2;
+  --knickGray: #BEC0C2;
   --black: #000000;
-  --white: #ffffff; */
+  --white: #ffffff;
 
   /* OKC Thunder */
   --okcBlueL: #007AC1;
   --okcOrange: #EF3B24;
-  /* --okcBlueD: #002D62;
-  --okcYellow: #FDBB30; */
+  --okcBlueD: #002D62;
+  --okcYellow: #FDBB30;
 
   /* Orlando Magic */
   --magicBlue: #0077C0;
@@ -142,26 +142,26 @@
   /* Philly 76 */
   --sevenRed: #ED174C;
   --sevenBlueL: #006BB6;
-  /* --sevenBLueD: #002B5C;
+  --sevenBLueD: #002B5C;
   --sevenSilver: #C4CED4;
-  --white: #ffffff; */
+  --white: #ffffff;
 
   /* Phoenix Suns */
   --sunPurple: #1D1160;
   --sunOrange: #E56020;
-  /* --sunYellow: #F9AD1B;
+  --sunYellow: #F9AD1B;
   --sunGray: #63727A;
-  --black: #000000; */
+  --black: #000000;
 
   /* Portland Trail Blazers */
   --blazeRed: #E03A3E;
   --black: #000000;
-  /* --white: #ffffff; */
+  --white: #ffffff;
 
   /* Sacramento Kings */
   --kingPurple: #5A2D81;
   --kingGray: #63727A;
-  /* --black: #000000; */
+  --black: #000000;
 
   /* San Antonio Spurs */
   --spurSilver: #C4CED4;
@@ -170,9 +170,9 @@
   /* Toronto Raptors */
   --rapRed: #CE1141;
   --black: #000000;
-  /* --rapSilver: #A1A1A4;
+  --rapSilver: #A1A1A4;
   --rapGold: #B4975A;
-  --white: #ffffff; */
+  --white: #ffffff;
 
   /* Utah Jazz */
   --jazzYell: #fff21f;
@@ -181,7 +181,7 @@
   /* Washington Wizards */
   --wizRed: #E31837;
   --wizBlue: #002B5C;
-  /* --wizGray: #C4CED4; */
+  --wizGray: #C4CED4;
 }
 
 body,
@@ -211,8 +211,12 @@ h6 {
   color: var(--nbaRed);
 }
 
-.loginSignLogout {
-  color: white;
+#colorHov:hover{
+  color: var(--nbaRed);
+}
+
+.loginSignLogout{
+  color:white;
 }
 
 .loginSignLogout:hover {
@@ -266,3 +270,414 @@ h6 {
   bottom: 0;
   width: 100%;
 }
+
+#teamSearchBtn{
+  background-color: var(--nbaBlue);
+}
+
+#teamSearchBtn:hover{
+  background-color: var(--nbaRed);
+}
+
+#teamSearchBox:focus{
+  box-shadow: 0 0 4px 1px var(--nbaBlue);
+  border-color: var(--nbaBlue);
+}
+
+#favTeamH1{
+  text-align: center;
+}
+
+.teamsList{
+  display: flex;
+  justify-content: space-around;
+}
+
+/* team card css */
+
+.card button{
+  border: none;
+}
+
+.card.Hawks{
+  background-color: var(--hawkBlack);
+  color:var(--hawkRed);
+}
+.card.Hawks button{
+  background-color: var(--hawkRed);
+}
+.card.Hawks button:hover{
+  background-color: var(--hawkGreen);
+  color:var(--hawkBlack);
+}
+
+.card.Celtics{
+  background-color: var(--celticGreen);
+  color: var(--white);
+}
+.card.Celtics button{
+  background-color: var(--celticGold);
+}
+.card.Celtics button:hover{
+  background-color: var(--celticBrown);
+}
+
+.card.Nets{
+  background-color: var(--black);
+  color:var(--white);
+}
+.card.Nets button{
+  background-color: var(--white);
+  color:var(--black);
+}
+.card.Nets button:hover{
+  background-color: var(--gray);
+}
+
+.card.Hornets{
+  background-color: var(--hornetTeal);
+  color: var(--white);
+}
+.card.Hornets button{
+  background-color: var(--hornetPurple);
+}
+.card.Hornets button:hover{
+  background-color: var(--white);
+  color:var(--hornetPurple);
+}
+
+.card.Bulls{
+  background-color: var(--bullRed);
+  color: var(--black);
+}
+.card.Bulls button{
+  background-color: var(--black);
+  color:var(--white);
+}
+.card.Bulls button:hover{
+  background-color: var(--white);
+  color:var(--bullRed);
+}
+
+.card.Cavaliers{
+  background-color: var(--cavRed);
+  color:var(--cavGold);
+}
+.card.Cavaliers button{
+  background-color: var(--cavGold);
+  color:var(--cavBlue);
+}
+.card.Cavaliers button:hover{
+  background-color: var(--cavBlue);
+  color:var(--cavGold);
+}
+
+.card.Mavericks{
+  background-color: var(--mavsBlueD);
+  color: var(--mavsSilver);
+}
+.card.Mavericks button{
+  background-color: var(--mavsBlueL);
+  color:var(--white);
+}
+.card.Mavericks button:hover{
+  background-color: var(--mavsSilver);
+  color:var(--mavsBlueL);
+}
+
+.card.Nuggets{
+  background-color: var(--nugsBlueL);
+  color:var(--nugsYellow);
+}
+.card.Nuggets button{
+  background-color: var(--nugsYellow);
+  color:var(--nugsBlueL);
+}
+.card.Nuggets button:hover{
+  background-color: var(--nugsRed);
+  color:var(--nugsYellow);
+}
+
+.card.Pistons{
+  background-color: var(--pistonBlueL);
+  color: var(--pistonGrey);
+}
+.card.Pistons button{
+  background-color: var(--pistonRed);
+  color:var(--pistonGrey);
+}
+.card.Pistons button:hover{
+  background-color: var(--pistonGrey);
+  color:var(--pistonBlueD);
+}
+
+.card.Warriors{
+  background-color: var(--warriorBlue);
+  color:var(--warrriorYellow);
+}
+.card.Warriors button{
+  background-color: var(--warrriorYellow);
+  color: var(--warriorBlue);
+}
+.card.Warriors button:hover{
+  background-color: var(--black);
+  color: var(--warrriorYellow);
+}
+
+.card.Rockets{
+  background-color: var(--rocketGrayD);
+  color:var(--rocketRed);
+}
+.card.Rockets button{
+  background-color: var(--rocketGrayL);
+  color:var(--rocketGrayD);
+}
+.card.Rockets button:hover{
+  background-color: var(--rocketRed);
+  color:var(--rocketGrayL)
+}
+
+.card.Pacers{
+  background-color: var(--pacerGold);
+  color:var(--pacerBlue);
+}
+.card.Pacers button{
+  background-color: var(--pacerBlue);
+  color:var(--pacerGray);
+}
+.card.Pacers button:hover{
+  background-color: var(--pacerGray);
+  color:var(--pacerBlue);
+}
+
+.card.Clippers{
+  background-color: var(--clipRed);
+  color:var(--white);
+}
+.card.Clippers button{
+  background-color: var(--clipBlue);
+  color:var(--white)
+}
+.card.Clippers button:hover{
+  background-color: var(--white);
+  color:var(--clipBlue);
+}
+
+.card.Lakers{
+  background-color: var(--lakeYellow);
+  color:var(--lakePurple);
+}
+.card.Lakers button{
+  background-color: var(--lakePurple);
+}
+.card.Lakers button:hover{
+  background-color:#95c1e4;
+  color:var(--lakePurple);
+}
+
+.card.Grizzlies{
+  background-color: var(--grizzBlueL);
+  color:var(--grizzBlueD);
+}
+.card.Grizzlies button{
+  background-color: var(--grizzGold);
+  color:var(--grizzBlueD)
+}
+.card.Grizzlies button:hover{
+  background-color: var(--grizzBlueD);
+  color:var(--grizzGold);
+}
+
+.card.Heat{
+  background-color: var(--heatRed);
+  color:var(--heatGold);
+}
+.card.Heat button{
+  background-color: var(--heatGold);
+  color:var(--black);
+}
+.card.Heat button:hover{
+  background-color: var(--black);
+  color:var(--heatGold);
+}
+
+.card.Bucks{
+  background-color: var(--buckGreen);
+  color:var(--buckCream);
+}
+.card.Bucks button{
+  background-color: var(--buckCream);
+  color:var(--buckBlue);
+}
+.card.Bucks button:hover{
+  background-color: var(--buckBlue);
+  color:var(--buckCream);
+}
+
+.card.Timberwolves{
+  background-color: var(--wolfBlueL);
+  color:var(--wolfGreen);
+}
+.card.Timberwolves button{
+background-color: var(--wolfGreen);
+color:var(--wolfBlueD);
+}
+.card.Timberwolves button:hover{
+  background-color: var(--wolfGrey);
+  color:var(--wolfBlueD);
+}
+
+.card.Pelicans{
+  background-color: var(--peliBlue);
+  color:var(--peliGold);
+}
+.card.Pelicans button{
+  background-color: var(--peliRed);
+  color:var(--peliBlue);
+}
+.card.Pelicans button:hover{
+  background-color: var(--peliGold);
+  color:var(--peliBlue);
+}
+
+.card.Knicks{
+  background-color: var(--knickBlue);
+  color:var(--knickOrange);
+}
+.card.Knicks button{
+  background-color: var(--knickOrange);
+  color: var(--knickBlue);
+}
+.card.Knicks button:hover{
+  background-color: var(--knickGray);
+  color:var(--knickBlue);
+}
+
+.card.Thunder{
+  background-color: var(--okcBlueL);
+  color:var(--okcYellow);
+}
+.card.Thunder button{
+  background-color: var(--okcOrange);
+  color:var(--okcBlueD)
+}
+.card.Thunder button:hover{
+  background-color: var(--okcBlueD);
+  color:var(--okcYellow);
+}
+
+.card.Magic{
+  background-color: #3b3d3f;
+  color:var(--magicSilver);
+}
+.card.Magic button{
+  background-color: var(--magicBlue);
+  color: var(--white);
+}
+.card.Magic button:hover{
+  background-color: var(--magicSilver);
+  color:#3b3d3f;
+}
+
+.card.Philadelphia{
+  background-color: var(--sevenBLueD);
+  color:var(--sevenRed);
+}
+.card.Philadelphia button{
+  background-color: var(--sevenBlueL);
+  color:var(--sevenSilver);
+}
+.card.Philadelphia button:hover{
+  background-color: var(--sevenSilver);
+  color:var(--sevenRed);
+}
+
+.card.Suns{
+  background-color: var(--sunPurple);
+  color:var(--sunYellow);
+}
+.card.Suns button{
+  background-color: var(--sunOrange);
+  color:var(--sunPurple);
+}
+.card.Suns button:hover{
+  background-color: var(--sunYellow);
+  color:var(--sunOrange);
+}
+
+.card.Blazers{
+  background-color: var(--white);
+  color:var(--black);
+}
+.card.Blazers button{
+  background-color: var(--blazeRed);
+}
+.card.Blazers button:hover{
+  background-color: var(--black);
+  color:var(--blazeRed);
+}
+
+.card.Kings{
+  background-color: var(--kingPurple);
+  color:var(--white);
+}
+.card.Kings button{
+  background-color: var(--kingGray);
+  color:var(--white);
+}
+.card.Kings button:hover{
+  background-color: var(--white);
+  color:var(--kingGray);
+}
+
+.card.Spurs{
+  background-color: var(--spurSilver);
+  color:var(--black);
+}
+.card.Spurs button{
+  background-color: var(--white);
+  color:var(--black);
+}
+.card.Spurs button:hover{
+  background-color: var(--black);
+  color:var(--white);
+}
+
+.card.Raptors{
+  background-color: var(--black);
+  color:var(--rapRed);
+}
+.card.Raptors button{
+  background-color: var(--rapSilver);
+  color:var(--rapRed);
+}
+.card.Raptors button:hover{
+  background-color: var(--rapGold);
+  color:var(--black);
+}
+
+.card.Jazz{
+  background-color: var(--black);
+  color:var(--jazzYell);
+}
+.card.Jazz button{
+  background-color: var(--jazzYell);
+  color:var(--black);
+}
+.card.Jazz button:hover{
+  background-color: var(--white);
+}
+
+.card.Wizards{
+  background-color: var(--wizBlue);
+  color: var(--wizRed);
+}
+.card.Wizards button{
+  background-color: var(--wizGray);
+  color:var(--wizBlue);
+}
+.card.Wizards button:hover{
+  background-color: var(--wizRed);
+  color:var(--wizGray);
+}
+

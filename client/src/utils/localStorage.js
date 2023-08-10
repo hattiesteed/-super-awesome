@@ -39,7 +39,7 @@ export const getTeams = async () => {
             }
             const { data } = await response.json();
             const teamData = data.map((team) => ({
-                // class: team.name,
+                class: team.name,
                 teamId: team.id,
                 name: team.full_name,
                 conference: team.conference,

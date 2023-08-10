@@ -53,13 +53,14 @@ mutation saveTeam( $newTeam: InputTeam! ) {
             division
             city
             abbreviation
+            class
         }
     }
 }
 `;
 
 export const REMOVE_TEAM = gql`
-mutation removeTeam( $teamId: String! ) {
+mutation removeTeam( $teamId: Int! ) {
     removeTeam( teamId: $teamId ) {
         _id
         username
@@ -71,6 +72,7 @@ mutation removeTeam( $teamId: String! ) {
             division
             city
             abbreviation
+            class
         }
     }
 }
