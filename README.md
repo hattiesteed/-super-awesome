@@ -1,5 +1,4 @@
 # Hoop-Zone
 
 ## User Story
-As a nba fan, I want to be able to select my favorite teams and add them to a saved teams list
-I want to be able to see
+Are you an avid NBA fan who lives and breathes basketball? Do you find yourself constantly checking scores, player stats, and upcoming games for your favorite team? Look no further – Hoop Zone is here to elevate your NBA experience to a whole new level!
