@@ -13,6 +13,7 @@ import Auth from '../utils/auth';
 import React, { useState, useEffect } from 'react';
 import { saveTeamIds, getSavedTeamIds } from '../utils/localStorage';
 import { SAVE_TEAM } from '../utils/mutations';
+import bball from '../assets/bball.jpg'
 
 // const user = data?.me || data?.user || {};
 
@@ -48,10 +49,10 @@ const ProfilePage = () => {
             if (!response.ok) {
                 throw new Error(`Uh oh...Something went wrong!`);
             }
-            const { items } = await response.json();
-            const teamData = items.map((team) => ({
+            const { data } = await response.json();
+            const teamData = data.map((team) => ({
                 teamId: team.id,
-                name: team.name,
+                name: team.full_name,
                 conference: team.conference,
                 division: team.division,
                 city: team.city,
@@ -59,6 +60,8 @@ const ProfilePage = () => {
             }));
             setSearchTeams(teamData);
             setSearchInput(``);
+            console.log(teamData)
+            console.log(data)
         } catch (err) {
             console.error(err);
         }
@@ -104,9 +107,27 @@ const ProfilePage = () => {
                             </Col>
                         </Row>
                     </Form>
+                    <Row>
+                        {
+                            searchedTeams.map((team) => {
+                                console.log(team)
+                                return (
+
+                                    <div key={team.id}>
+                                        {team.name}
+                                    </div>
+
+                                )
+                            })
+                        }
+                    </Row>
                 </Container>
             </div>
 
+            {/* <img src={bball} alt='NBA court' id='courtPic' /> */}
+            <footer id='welcomeFoot'>
+                <p>Created by: Hattie Steed, Fabian Barranco, Kelton Sterett, Mckay Memmott</p>
+            </footer>
 
 
         </main>
