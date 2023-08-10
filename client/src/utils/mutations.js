@@ -41,7 +41,7 @@ mutation addUser(
 `;
 
 export const SAVE_TEAM = gql`
-mutation saveTeam( $newTeam: TeamInput! ) {
+mutation saveTeam( $newTeam: InputTeam! ) {
     saveTeam( newTeam: $newTeam ) {
         _id
         username

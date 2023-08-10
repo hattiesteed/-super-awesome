@@ -33,6 +33,7 @@ const resolvers = {
             return { token, user };
         },
         saveTeam: async (parent, { newSavedTeam }, context) => {
+            console.log("madeithere")
             if (context.user) {
                 const updatedUser = await User.findByIdAndUpdate(
                     { _id: context.user._id },
@@ -42,7 +43,7 @@ const resolvers = {
                 return updatedUser;
             }
             throw new AuthenticationError('You need to be logged in!');
-    },
+        },
         removeTeam: async (parent, { teamId }, context) => {
             if (context.user) {
                 const updatedUser = await User.findOneAndUpdate(

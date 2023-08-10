@@ -13,7 +13,6 @@ import Auth from '../utils/auth';
 import React, { useState, useEffect } from 'react';
 import { saveTeamIds, getSavedTeamIds } from '../utils/localStorage';
 import { SAVE_TEAM } from '../utils/mutations';
-import bball from '../assets/bball.jpg'
 
 // const user = data?.me || data?.user || {};
 
@@ -24,8 +23,32 @@ const ProfilePage = () => {
     const [searchInput, setSearchInput] = useState('');
     const [savedTeamIds, setSavedTeamIds] = useState(getSavedTeamIds());
     const [saveTeam, { error }] = useMutation(SAVE_TEAM);
+
+    const getTeams = async () => {
+        try {
+            const response = await fetch(`https://www.balldontlie.io/api/v1/teams`);
+            if (!response.ok) {
+                throw new Error(`Uh oh...Something went wrong!`);
+            }
+            const { data } = await response.json();
+            const teamData = data.map((team) => ({
+                class: team.name,
+                teamId: team.id,
+                name: team.full_name,
+                conference: team.conference,
+                division: team.division,
+                city: team.city,
+                abbreviation: team.abbreviation,
+            }));
+            setSearchTeams(teamData);
+        } catch (err) {
+            console.error(err);
+        }
+    };
+
     // // navigate to personal profile page if username is yours
     useEffect(() => {
+        getTeams()
         return () => saveTeamIds(savedTeamIds);
     });
     if (!Auth.loggedIn()) {
@@ -36,46 +59,17 @@ const ProfilePage = () => {
         return <div>Loading...</div>;
     }
 
-
-    // add this to html where search bar is: onSubmit={handleFormSubmit}
-    const handleFormSubmit = async (event) => {
-        event.preventDefault();
-
-        if (!searchInput) {
-            return false;
-        }
-        try {
-            const response = await fetch(`https://www.balldontlie.io/api/v1/teams?search=${searchInput}`);
-            if (!response.ok) {
-                throw new Error(`Uh oh...Something went wrong!`);
-            }
-            const { data } = await response.json();
-            const teamData = data.map((team) => ({
-                teamId: team.id,
-                name: team.full_name,
-                conference: team.conference,
-                division: team.division,
-                city: team.city,
-                abbreviation: team.abbreviation,
-            }));
-            setSearchTeams(teamData);
-            setSearchInput(``);
-            console.log(teamData)
-            console.log(data)
-        } catch (err) {
-            console.error(err);
-        }
-    };
     const handleSaveTeam = async (teamId) => {
-        const teamToSave = searchedTeams.find((team) => team.teamId === teamId);
+        const teamToSave = searchedTeams.find((team) => team.id === teamId);
         const token = Auth.loggedIn() ? Auth.getToken() : null;
 
         if (!token) {
             return false;
         }
         try {
-            const { data } = await saveTeam({
-                variables: { teamData: { ...teamToSave } },
+            console.log(teamToSave)
+            const response = await saveTeam({
+                variables: { newTeam: teamToSave },
             });
             setSavedTeamIds([...savedTeamIds, teamToSave.teamId]);
         } catch (err) {
@@ -87,8 +81,8 @@ const ProfilePage = () => {
         <main>
             <div>
                 <Container>
-                    <h1>Search for your favorite team!</h1>
-                    <Form onSubmit={handleFormSubmit}>
+                    <h1>Add your favorite teams!</h1>
+                    {/* <Form onSubmit={handleFormSubmit}>
                         <Row>
                             <Col xs={12} md={8}>
                                 <Form.Control
@@ -106,25 +100,27 @@ const ProfilePage = () => {
                                 </Button>
                             </Col>
                         </Row>
-                    </Form>
+                    </Form> */}
                     <Row>
                         {
                             searchedTeams.map((team) => {
-                                console.log(team)
                                 return (
-
-                                    <div key={team.id}>
-                                        {team.name}
-                                    </div>
-
+                                    <Col md="4">
+                                        <Card key={team.id} className={team.class}>
+                                            <Card.Body>
+                                                <Card.Title>{team.name}</Card.Title>
+                                                <Button variant="primary" onClick={() => handleSaveTeam(team.id)}>Save</Button>
+                                            </Card.Body>
+                                        </Card>
+                                    </Col>
                                 )
+
                             })
+
                         }
                     </Row>
                 </Container>
             </div>
-
-            {/* <img src={bball} alt='NBA court' id='courtPic' /> */}
             <footer id='welcomeFoot'>
                 <p>Created by: Hattie Steed, Fabian Barranco, Kelton Sterett, Mckay Memmott</p>
             </footer>
