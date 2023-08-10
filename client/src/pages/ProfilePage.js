@@ -87,10 +87,13 @@ const ProfilePage = () => {
                     <Row>
                         {
                             searchedTeams.map((team) => {
-                               
+                                let classString = team.class
+                                if (classString=='76ers') {
+                                    classString = 'Philadelphia'
+                                };
                                 return (
                                     <Col key={team.teamId} md="4">
-                                        <Card className={team.class}>
+                                        <Card className={classString}>
                                             <Card.Body>
                                                 <Card.Title>{team.name}</Card.Title>
                                                 <Button variant="primary" onClick={() => handleSaveTeam(team.teamId)}>Save</Button>

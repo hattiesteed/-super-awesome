@@ -45,9 +45,13 @@ const FavoriteTeams = () => {
             <h1 id='favTeamH1'>Your favorites teams:</h1>
             <Row>
                 {user.savedTeams.map((team) => {
+                    let classString = team.class
+                    if (classString=='76ers') {
+                        classString = 'Philadelphia'
+                    };
                     return(
                         <Col md='3' key={team.teamId}>
-                            <Card className={team.name}>
+                            <Card className={classString}>
                                 <Card.Body>
                                     <Card.Title>{team.name}</Card.Title>
                                     <Card.Text>{team.city}</Card.Text>
