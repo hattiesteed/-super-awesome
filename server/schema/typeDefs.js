@@ -21,6 +21,7 @@ const typeDefs = gql`
         division: String
         city: String
         abbreviation: String
+        class: String
     }
 
     input InputTeam {
@@ -30,6 +31,7 @@ const typeDefs = gql`
         division: String
         city: String
         abbreviation: String
+        class: String
     }
 
     type Query {

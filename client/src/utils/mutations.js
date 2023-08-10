@@ -53,6 +53,7 @@ mutation saveTeam( $newTeam: InputTeam! ) {
             division
             city
             abbreviation
+            class
         }
     }
 }
@@ -71,6 +72,7 @@ mutation removeTeam( $teamId: Int! ) {
             division
             city
             abbreviation
+            class
         }
     }
 }
