@@ -15,7 +15,6 @@ const resolvers = {
 
     Mutation: {
         addUser: async (parent, args) => {
-            console.log('addUser')
             const user = await User.create(args);
             const token = signToken(user);
             return { token, user };
@@ -32,17 +31,17 @@ const resolvers = {
             const token = signToken(user);
             return { token, user };
         },
-        saveTeam: async (parent, { newSavedTeam }, context) => {
+        saveTeam: async (parent, { newTeam }, context) => {
             if (context.user) {
                 const updatedUser = await User.findByIdAndUpdate(
                     { _id: context.user._id },
-                    { $addToSet: { savedTeams: newSavedTeam } },
+                    { $addToSet: { savedTeams: newTeam } },
                     { new: true }
                 );
                 return updatedUser;
             }
             throw new AuthenticationError('You need to be logged in!');
-    },
+        },
         removeTeam: async (parent, { teamId }, context) => {
             if (context.user) {
                 const updatedUser = await User.findOneAndUpdate(
