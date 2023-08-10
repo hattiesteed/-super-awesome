@@ -49,9 +49,9 @@ const ProfilePage = () => {
             return false;
         }
         try {
-            // const response = await saveTeam({
-            //     variables: { newTeam: teamToSave },
-            // });
+            const response = await saveTeam({
+                variables: { newTeam: teamToSave },
+            });
             console.log(teamToSave);
             setSavedTeamIds([...savedTeamIds, teamToSave.teamId]);
         } catch (err) {

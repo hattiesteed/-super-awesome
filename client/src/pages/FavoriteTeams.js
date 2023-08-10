@@ -60,12 +60,6 @@ const FavoriteTeams = () => {
                     );
                 })}
             </Row>
-            <div className='teamsList'>
-                <div>team</div>
-                <div>team</div>
-                <div>team</div>
-                <div>team</div>
-            </div>
         </main>
     )
 }
