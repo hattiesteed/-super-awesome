@@ -1,11 +1,11 @@
-const {Schema} = require(`mongoose`);
+const { Schema } = require(`mongoose`);
 
 const teamSchema = new Schema({
-    name: [ 
-        {
-            type: String,
-        },
-    ],
+    name:
+    {
+        type: String,
+        required: true,
+    },
     conference: {
         type: String,
         required: true,
@@ -22,7 +22,11 @@ const teamSchema = new Schema({
         type: String,
         required: true,
     },
-    
+    teamId: {
+        type: Number,
+        required: true,
+    },
+
 });
 
 module.exports = teamSchema;

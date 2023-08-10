@@ -15,7 +15,7 @@ const typeDefs = gql`
     }
 
     type Team {
-        teamId: String!
+        teamId: Int!
         name: String
         conference: String
         division: String
@@ -24,7 +24,7 @@ const typeDefs = gql`
     }
 
     input InputTeam {
-        teamId: String!
+        teamId: Int!
         name: String
         conference: String
         division: String
@@ -40,7 +40,7 @@ const typeDefs = gql`
         login(email: String!, password: String!): Auth
         addUser(username: String!, email: String!, password: String!): Auth
         saveTeam(newTeam: InputTeam!) : User
-        removeTeam(teamId: String!): User
+        removeTeam(teamId: Int!): User
     }
 `;
 
